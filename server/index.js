@@ -10,7 +10,7 @@ const rateLimit = require("express-rate-limit");
 
 const app = express();
 
-const db = monk("http://167.172.45.225/andrei");
+const db = monk("localhost/mews");
 
 const mews = db.get("mews");
 
@@ -49,7 +49,7 @@ app.use(express.json());
 
 // app.use(limiter);
 
-mew = { name: "Andrei", last: "Andonie" };
+mew = { name: "Bettina", last: "Mates" };
 
 let dbOut = [];
 
