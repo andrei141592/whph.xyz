@@ -24,11 +24,11 @@ const limiter = rateLimit({
 app.use(cors());
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.json({
-    message: "Meower!",
-  });
-});
+// app.get("/", (req, res) => {
+//   res.json({
+//     message: "Meower!",
+//   });
+// });
 
 app.get("/mews", (req, res) => {
   mews
@@ -47,7 +47,7 @@ function isValidMews(mew) {
   );
 }
 
-app.use(limiter);
+// app.use(limiter);
 
 app.post("/mews", (req, res) => {
   if (isValidMews(req.body)) {
@@ -65,6 +65,10 @@ app.post("/mews", (req, res) => {
       message: "Hey! Name and Content are required!",
     });
   }
+});
+
+app.get("/", (req, res) => {
+  res.send("<h1>The server is live</h1>");
 });
 
 app.listen(5000, () => {
