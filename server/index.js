@@ -70,3 +70,5 @@ app.post("/mews", (req, res) => {
 app.listen(5000, () => {
   console.log("Listening on http://localhost:5000");
 });
+
+console.log("Hello world!");
