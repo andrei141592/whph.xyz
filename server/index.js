@@ -10,7 +10,7 @@ const rateLimit = require("express-rate-limit");
 
 const app = express();
 
-const db = monk(process.env.MONGO_URI || "localhost/meower");
+const db = monk("167.172.45.225/meower");
 
 const mews = db.get("mews");
 
@@ -68,7 +68,7 @@ app.post("/mews", (req, res) => {
 });
 
 app.listen(5000, () => {
-  console.log("Listening on http://localhost:5000");
+  console.log("Listening on http://167.172.45.225:5000");
 });
 
 console.log("Hello world!");

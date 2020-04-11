@@ -6,7 +6,7 @@ const loadingElement = document.querySelector(".loading");
 
 const mewsElement = document.querySelector(".mews");
 
-const API_URL = "http://localhost:5000/mews";
+const API_URL = "http://167.172.45.225:5000/mews";
 
 loadingElement.style.display = "";
 
