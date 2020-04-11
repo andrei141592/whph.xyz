@@ -10,7 +10,7 @@ const rateLimit = require("express-rate-limit");
 
 const app = express();
 
-const db = monk("167.172.45.225/meower");
+const db = monk("167.172.45.225");
 
 const mews = db.get("mews");
 
