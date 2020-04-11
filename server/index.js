@@ -47,7 +47,7 @@ function isValidMews(mew) {
   );
 }
 
-// app.use(limiter);
+app.use(limiter);
 
 // mew = { name: "Bettina", last: "Mates" };
 
